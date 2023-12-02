@@ -1,0 +1,52 @@
+.testimonials {
+  text-align: center;
+  padding: 2rem;
+  color: #232323;
+  background: #dce4d2;
+}
+
+.testimonial-content p {
+  font-family: 'Permanent Marker', sans-serif;
+  font-size: 26px;
+  color: #89b758;
+  padding-top: 10px;
+}
+
+.testimonial-content h1 {
+  font-size: 50px;
+  font-weight: 900;
+  padding-top: 10px;
+}
+
+.test-text {
+  width: 60%;
+  margin: 50px auto;
+  line-height: 1.2;
+}
+
+.client-img {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto 0.5rem auto;
+  position: relative;
+}
+
+.client-img img {
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.client-name {
+  font-weight: 900;
+  margin-top: 18px;
+  font-size: 28px;
+}
+
+.occupation {
+  text-transform: capitalize;
+  opacity: 0.8;
+  margin-top: 9px;
+}
