@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.container-fluid {
+  background: #232323;
+  height: 130vh !important;
+  padding: 70px 30px !important;
+}
+
+.small-text {
+  color: #e7272d;
+  font-family: 'Permanent Marker', sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.heading {
+  color: #fff;
+  font-weight: 900;
+  font-size: 50px;
+}
+
+.other-text {
+  color: #fff;
+  font-size: 16px;
+  margin: 30px 0px;
+}
+
+.delivery-reward-btn {
+  background: #e7272d;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 17px 38px;
+  margin: 40px 0px;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.delivery-reward-btn:hover {
+  background: #fbbe36;
+  transition: all 0.5s ease;
+}
+
+.btn-text {
+  font-size: 18px;
+  padding: 0px 0px 9px 8px;
+  font-weight: 700;
+}
+
+.mid-side img {
+  width: 400px;
+  height: 400px;
+  margin-top: 200px;
+}
+
+.right-side {
+  text-align: right;
+}
+
+@media screen and (min-width: 987px) and (max-width: 992px) {
+  .container-fluid {
+    height: auto !important;
+    padding: 40px 20px 60px 20px !important;
+  }
+
+  .left-side,
+  .right-side {
+    padding: 15px 12px;
+  }
+
+  .mid-side {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mid-side img {
+    margin-top: 280px;
+    margin-right: 100px;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .container-fluid {
+    height: auto !important;
+    padding: 40px 10px 60px 10px !important;
+  }
+
+  .left-side,
+  .right-side {
+    padding: 15px 12px;
+  }
+
+  .mid-side {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mid-side img {
+    margin-top: 280px;
+    margin-right: 100px;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 986px) {
+  .heading {
+    font-size: 40px;
+  }
+
+  .other-text {
+    font-size: 12px;
+  }
+
+  .container-fluid {
+    height: auto !important;
+    padding: 40px 30px 60px 30px !important;
+  }
+
+  .delivery-reward-btn {
+    padding: 13px 30px;
+    margin: 20px 0px;
+  }
+
+  .btn-text {
+    font-size: 14px;
+  }
+
+  .mid-side {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mid-side img {
+    margin: 20px auto;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 599px) {
+  .small-text {
+    font-size: 18px;
+  }
+
+  .heading {
+    font-size: 30px;
+  }
+
+  .other-text {
+    font-size: 12px;
+  }
+
+  .container-fluid {
+    height: auto !important;
+    padding: 40px 10px 60px 10px !important;
+  }
+
+  .delivery-reward-btn {
+    padding: 10px 22px;
+    margin: 2px 0px;
+  }
+
+  .btn-text {
+    font-size: 12px;
+  }
+
+  .mid-side {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mid-side img {
+    width: 320px;
+    height: 320px;
+    margin: 20px auto;
+  }
+
+  .left-side,
+  .right-side {
+    margin: 0px 8px;
+  }
+}
+
+@media screen and (width < 481px) {
+  .container-fluid {
+    height: auto !important;
+    padding: 40px 10px 60px 10px !important;
+  }
+
+  .small-text {
+    font-size: 14px;
+  }
+
+  .heading {
+    font-size: 25px;
+  }
+
+  .other-text {
+    font-size: 12px;
+  }
+
+  .delivery-reward-btn {
+    padding: 10px 22px;
+    margin: 2px 0px;
+  }
+
+  .btn-text {
+    font-size: 12px;
+  }
+
+  .mid-side {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mid-side img {
+    width: 250px;
+    height: 250px;
+    margin: 10px auto;
+  }
+}

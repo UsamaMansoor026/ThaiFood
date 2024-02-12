@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.container {
+  padding: 80px 0px 150px 0px !important;
+}
+
+.newComer {
+  font-family: "Permanent Marker", cursive;
+  color: #89b758;
+  font-size: 26px;
+}
+
+.newFood-heading {
+  color: #29361a;
+  font-size: 61px;
+  margin: 0px 0px 8px;
+  padding: 0px 0px 16px;
+  font-weight: 700;
+}
+
+.card-container {
+  padding: 30px 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .newFood-heading {
+    font-size: 50px;
+  }
+}

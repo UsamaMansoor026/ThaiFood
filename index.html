@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thai Food | MAAN</title>
+
+    <!-- Bootstrap CSS File -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS Files -->
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/heroSection.css" />
+    <link rel="stylesheet" href="./css/newFood.css" />
+    <link rel="stylesheet" href="./css/cardForNewFood.css" />
+    <link rel="stylesheet" href="./css/whoAreWe.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="stylesheet" href="./css/menuCard.css" />
+    <link rel="stylesheet" href="./css/deliveryReward.css" />
+    <link rel="stylesheet" href="./css/testimonials.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NavBar Section -->
+    <section id="navbar">
+      <div class="myNavbar">
+        <div class="brandName">
+          <img class="logo" src="./images/pizza.png" alt="logo" />
+          <h3 class="logoName">Dine M26</h3>
+        </div>
+
+        <div class="navBar-links">
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/">Live Demo</a>
+            </li>
+            <li>
+              <a href="/">Live Demo Blocks</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Navbar For Phone and Tablet -->
+        <div class="navBar-links-phone" id="navBarForPhone">
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/">Live Demo</a>
+            </li>
+            <li>
+              <a href="/">Live Demo Blocks</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="buy-btn">
+          <input type="button" value="Buy Now" class="buyNow" />
+          <div class="hamburger" onclick="handleNavBar()">
+            <box-icon name="menu" color="#fff" size="30px"></box-icon>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="heroSection">
+        <h1 class="hero-heading">Thai Food</h1>
+        <p class="hero-para">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+          ullamcorper neque dapibus ipsum semper, sit amet luctus turpis
+          porttitor. Ut libero ante, varius quis ligula.
+        </p>
+        <button class="order-btn">
+          <box-icon name="cart" color="#000" size="30px"></box-icon>
+          <p>Order Now</p>
+        </button>
+        <div class="img-container">
+          <img class="img" src="./images/dish.png" alt="Dish" />
+        </div>
+      </div>
+    </section>
+
+    <!-- NewFood Section -->
+    <section id="newFood">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h3 class="newComer">NewComer</h3>
+            <h1 class="newFood-heading">Thai fast food</h1>
+          </div>
+          <div class="col-lg-12"></div>
+        </div>
+        <!-- Cards for NewFood -->
+        <div class="row card-container">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div
+              class="card-for-new-food"
+              style="
+                background: url('./images/thai-combo.jpg');
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                height: 75vh;
+                border-radius: 20px;
+              "
+            >
+              <div class="content">
+                <h3 class="type">Thai Combo</h3>
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing.
+                </p>
+                <h3 class="price">$12</h3>
+                <p class="cart">
+                  <box-icon name="cart" color="#fff" size="30px"></box-icon>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div
+              class="card-for-new-food"
+              style="
+                background: url('./images/thai-pizza.jpg');
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                height: 75vh;
+                border-radius: 20px;
+              "
+            >
+              <div class="content">
+                <h3 class="type">Thai Pizza</h3>
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing.
+                </p>
+                <h3 class="price">$14</h3>
+                <p class="cart">
+                  <box-icon name="cart" color="#fff" size="30px"></box-icon>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div
+              class="card-for-new-food"
+              style="
+                background: url('./images/thai-fish-set.jpg');
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                height: 75vh;
+                border-radius: 20px;
+              "
+            >
+              <div class="content">
+                <h3 class="type">Fish Set</h3>
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing.
+                </p>
+                <h3 class="price">$17</h3>
+                <p class="cart">
+                  <box-icon name="cart" color="#fff" size="30px"></box-icon>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WhoAreWe Section -->
+    <section id="whoAreWe">
+      <div class="container">
+        <div class="main-content">
+          <div class="left"></div>
+          <div class="mid">
+            <p class="whoarewe">Who are we</p>
+            <h2 class="whoarewe-heading">
+              Best food traditions from the world
+            </h2>
+            <p class="whoarewe-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              ullamcorper neque dapibus ipsum semper, sit amet luctus turpis
+              porttitor. Ut libero ante, varius quis ligula.
+            </p>
+            <button class="read-more-btn">Read More</button>
+          </div>
+          <div class="right"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+      <div class="container">
+        <div class="top">
+          <p class="welcome-text">Welcome</p>
+          <h1 class="menu-heading">Our Menu</h1>
+        </div>
+
+        <!-- Row 1 -->
+        <div class="row">
+          <!-- 1st Menu Item -->
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="menuCard">
+              <div class="left-content">
+                <img src="./images/salmon-roll.jpg" alt="Menu Item" />
+              </div>
+              <div class="right-content">
+                <p class="menu-item-type">Shushi</p>
+                <div class="name-price">
+                  <span class="menu-item-name">Salmon Roll</span>
+                  <span class="dots"></span>
+                  <span class="menu-item-price">$18</span>
+                </div>
+                <p class="menu-item-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Ullamcorper eget lectus porta euismod a libero.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2nd Menu Item -->
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="menuCard">
+              <div class="left-content">
+                <img src="./images/spicy-fish-set.jpg" alt="Menu Item" />
+              </div>
+              <div class="right-content">
+                <p class="menu-item-type">Thai Food</p>
+                <div class="name-price">
+                  <span class="menu-item-name">Spicy Fish Set</span>
+                  <span class="dots"></span>
+                  <span class="menu-item-price">$28</span>
+                </div>
+                <p class="menu-item-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Ullamcorper eget lectus porta euismod a libero.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="row">
+          <!-- 3rd Menu Item -->
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="menuCard">
+              <div class="left-content">
+                <img src="./images/spicy-fish-set.jpg" alt="Menu Item" />
+              </div>
+              <div class="right-content">
+                <p class="menu-item-type">Thai Food</p>
+                <div class="name-price">
+                  <span class="menu-item-name">Spicy Fish Set</span>
+                  <span class="dots"></span>
+                  <span class="menu-item-price">$28</span>
+                </div>
+                <p class="menu-item-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Ullamcorper eget lectus porta euismod a libero.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4th Menu Item -->
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="menuCard">
+              <div class="left-content">
+                <img src="./images/menu-pizza.jpg" alt="Menu Item" />
+              </div>
+              <div class="right-content">
+                <p class="menu-item-type">Pizza</p>
+                <div class="name-price">
+                  <span class="menu-item-name">Thai Pizza</span>
+                  <span class="dots"></span>
+                  <span class="menu-item-price">$14</span>
+                </div>
+                <p class="menu-item-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Ullamcorper eget lectus porta euismod a libero.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="row">
+          <!-- 5th Menu Item -->
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="menuCard">
+              <div class="left-content">
+                <img src="./images/salmon-roll.jpg" alt="Menu Item" />
+              </div>
+              <div class="right-content">
+                <p class="menu-item-type">Shushi</p>
+                <div class="name-price">
+                  <span class="menu-item-name">Salmon Roll</span>
+                  <span class="dots"></span>
+                  <span class="menu-item-price">$18</span>
+                </div>
+                <p class="menu-item-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Ullamcorper eget lectus porta euismod a libero.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6th Menu Item -->
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="menuCard">
+              <div class="left-content">
+                <img src="./images/spicy-fish-set.jpg" alt="Menu Item" />
+              </div>
+              <div class="right-content">
+                <p class="menu-item-type">Thai Food</p>
+                <div class="name-price">
+                  <span class="menu-item-name">Spicy Fish Set</span>
+                  <span class="dots"></span>
+                  <span class="menu-item-price">$28</span>
+                </div>
+                <p class="menu-item-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Ullamcorper eget lectus porta euismod a libero.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="row">
+          <!-- 7th Menu Item -->
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="menuCard">
+              <div class="left-content">
+                <img src="./images/spicy-fish-set.jpg" alt="Menu Item" />
+              </div>
+              <div class="right-content">
+                <p class="menu-item-type">Thai Food</p>
+                <div class="name-price">
+                  <span class="menu-item-name">Spicy Fish Set</span>
+                  <span class="dots"></span>
+                  <span class="menu-item-price">$28</span>
+                </div>
+                <p class="menu-item-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Ullamcorper eget lectus porta euismod a libero.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8th Menu Item -->
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="menuCard">
+              <div class="left-content">
+                <img src="./images/menu-pizza.jpg" alt="Menu Item" />
+              </div>
+              <div class="right-content">
+                <p class="menu-item-type">Pizza</p>
+                <div class="name-price">
+                  <span class="menu-item-name">Thai Pizza</span>
+                  <span class="dots"></span>
+                  <span class="menu-item-price">$14</span>
+                </div>
+                <p class="menu-item-desc">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Ullamcorper eget lectus porta euismod a libero.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DeliveryReward Section -->
+    <section id="deliveryReward">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 col-sm-sm">
+            <div class="left-side">
+              <p class="small-text">Delivery</p>
+              <h1 class="heading">Choose what you want</h1>
+              <p class="other-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                ullamcorper neque dapibus ipsum semper, sit amet luctus turpis
+                porttitor. Ut libero ante, varius quis ligula
+              </p>
+              <button class="delivery-reward-btn">
+                <span class="icon"
+                  ><box-icon
+                    type="solid"
+                    name="user"
+                    color="#fff"
+                    size="25px"
+                  ></box-icon
+                ></span>
+                <span class="btn-text">Order Online</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-sm">
+            <div class="mid-side">
+              <img src="./images/dish.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-sm">
+            <div class="right-side">
+              <p class="small-text">Reward</p>
+              <h1 class="heading">Earn points every order</h1>
+              <p class="other-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                ullamcorper neque dapibus ipsum semper, sit amet luctus turpis
+                porttitor. Ut libero ante, varius quis ligula
+              </p>
+              <button class="delivery-reward-btn">
+                <span class="icon"
+                  ><box-icon
+                    name="info-circle"
+                    color="#fff"
+                    size="25px"
+                  ></box-icon
+                ></span>
+                <span class="btn-text learn">Learn More</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="contact">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <h3 class="ask-ques">Ask a question</h3>
+              <form action="#">
+                <input type="text" placeholder="Name" />
+                <br />
+                <input type="email" placeholder="Email" />
+                <br />
+                <input type="tel" placeholder="Phone Number" />
+                <br />
+                <textarea rows="5" placeholder="Your Message"></textarea>
+                <br />
+                <button type="submit" class="send-msg-btn">Send Message</button>
+              </form>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="iimg__wrap">
+                <img width="100%" src="./images/dish.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        Template by
+        <a href="https://www.mobirise.com" target="_blank">Mobirise</a>
+      </p>
+    </footer>
+
+    <!-- BoxIcons Script -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <script src="./js/navBar.js"></script>
+  </body>
+</html>

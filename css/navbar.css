@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.myNavbar {
+  display: grid;
+  height: 80px;
+  grid-template-columns: 50px 1fr 3fr 1fr 30px;
+  align-items: center;
+  align-content: center;
+  background-color: #89b758;
+  color: #fff;
+}
+
+.brandName {
+  line-height: 0.3;
+  grid-column-start: 2;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.logoName {
+  font-size: 23px;
+  font-weight: 900;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  padding: 0px 5px 0px 0px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+ul li a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  width: 100%;
+  text-decoration: none;
+  margin: 0px 14px;
+}
+
+ul li a:hover {
+  color: #f8d885;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Navbar for Phone and Tablet */
+.navBar-links-phone {
+  display: none;
+  background: color-mix(in srgb, #89b758 70%, #000 30%) !important;
+}
+
+/* HamBurger Icon */
+.hamburger {
+  display: none;
+}
+
+.buyNow {
+  font-size: 16px;
+  font-weight: 700;
+  outline: none;
+  box-shadow: none;
+  color: #e7272d;
+  background: #fff;
+  border: none;
+  width: 70%;
+  padding: 10px;
+  margin: 6.4px 12.8px 10px 12.8px;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.buyNow:hover {
+  border: 1px solid #f8d885;
+  color: #f8d885;
+}
+
+/* Media Screen for a Medium Screen (Tablet) */
+@media screen and (min-width: 481px) and (max-width: 986px) {
+  .buyNow {
+    display: none;
+  }
+
+  .myNavbar {
+    color: #fff;
+    grid-template-columns: 50px 2fr 30px;
+  }
+
+  .brandName {
+    grid-column-start: 2;
+  }
+
+  .navBar-links {
+    display: none;
+  }
+
+  .navBar-links-phone {
+    display: none;
+    background: #000;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    z-index: 3000;
+  }
+
+  .navBar-links-phone ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navBar-links-phone ul li {
+    padding: 20px 0px;
+    width: 60%;
+  }
+
+  .navBar-links-phone ul li a {
+    color: #fff;
+  }
+
+  .navBar-links-phone ul li a:hover {
+    color: #f8d885;
+  }
+
+  .img {
+    width: 550px;
+    height: 550px;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    cursor: pointer;
+  }
+}
+
+/* Media Screen for a Small Screen (Phone) */
+@media screen and (width < 481px) {
+  .navBar-links,
+  .buyNow {
+    display: none;
+  }
+
+  .navBar-links-phone {
+    display: none;
+    background: #000;
+    position: absolute;
+    width: 100%;
+    top: 90px;
+    z-index: 3000;
+  }
+
+  .navBar-links-phone ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navBar-links-phone ul li {
+    padding: 20px 0px;
+    width: 60%;
+  }
+
+  .navBar-links-phone ul li a {
+    color: #fff;
+  }
+
+  .navBar-links-phone ul li a:hover {
+    color: #f8d885;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+  }
+}

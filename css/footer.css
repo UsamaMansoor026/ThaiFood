@@ -1,0 +1,9 @@
+footer {
+  background: #89b758;
+  padding: 40px;
+}
+
+footer p {
+  color: color-mix(in srgb, gray 70%, #000 30%);
+  font-weight: 700;
+}

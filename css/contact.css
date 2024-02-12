@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.contact {
+  padding-top: 100px;
+  margin-bottom: 0;
+}
+
+.contact .container-fluid {
+  background: #fff;
+}
+
+.ask-ques {
+  padding: 0 30px 24px;
+  margin: 0 0 8px;
+  font-size: 26px;
+  font-weight: 900;
+}
+
+form {
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 16px 28px;
+  margin: 9px auto;
+  border: 1px solid lightgray;
+  outline: none;
+  border-radius: 8px;
+  color: gray;
+  font-weight: 400;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: gray;
+  font-weight: 400;
+}
+
+.send-msg-btn {
+  margin: 25px 0;
+  border: none;
+  background: #89b758;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 16px 40px;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+
+.send-msg-btn:hover {
+  background: #3d5326;
+}
+
+.iimg__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14px;
+}
+
+@media screen and (min-width: 481px) and (max-width: 986px) {
+  .ask-ques {
+    padding: 0;
+  }
+
+  form {
+    padding: 0;
+  }
+
+  .iimg__wrap > img {
+    width: 70%;
+  }
+}
+
+@media screen and (width < 481px) {
+  .send-msg-btn {
+    transition: all 0.8s;
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .ask-ques {
+    padding: 0;
+  }
+
+  form {
+    width: 100%;
+    padding: 0;
+  }
+  form input,
+  form textarea {
+    width: 100%;
+  }
+}
